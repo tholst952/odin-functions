@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Functions with Odin</title>
+</head>
+<body>
+    
+    <script>
+        // Write a function called add7 that takes one number and returns that number + 7.
+        const add7 = function(n) {
+            console.log(Number(n) + 7);
+        }
+
+        add7(7);
+        add7(20);
+
+        // Write a function called multiply that takes 2 numbers and returns their product.
+        const multiply = function(num1, num2) {
+            console.log(num1 * num2);
+        }
+
+        multiply(8, 7);
+        multiply(4, 11);
+
+        // Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+        const capitalize = function(str) {
+            const first = str.slice(0, 1).toUpperCase() + str.slice(1).toLowerCase();
+            console.log(first);
+        }
+
+        capitalize('javascript');
+        capitalize('AUTHORIZATION');
+        capitalize('cONduCTIviTY');
+
+        // Write a function called lastLetter that takes a string and returns the very last letter of that string:
+
+        // lastLetter("abcd") should return "d"
+
+        const lastLetter = function(str) {
+            console.log(str.slice(-1));
+        }
+
+        lastLetter('Legendary Edition');
+        lastLetter('Maker\'s Guide');
+
+
+
+    </script>
+</body>
+</html>
